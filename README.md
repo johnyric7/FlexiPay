@@ -28,7 +28,7 @@ Before running the application, ensure that you have the following:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-repo/flexipay.git
+git clone https://github.com/johnyric7/FlexiPay.git
 cd flexipay
 ```
 
