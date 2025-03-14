@@ -1,0 +1,43 @@
+# .NET Core
+bin/
+obj/
+
+# User-specific files
+.vs/
+.vscode/
+.idea/
+
+# ASP.NET Core
+wwwroot/
+appsettings.json
+appsettings.*.json
+
+# ASP.NET Core publish output
+publish/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer directory
+packages/
+
+# Windows Installer files in Visual Studio
+.vs2019/
+.vs2022/
+
+# .NET Core SDK-specific files
+global.json
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User secrets
+secrets.json
+
+# Logs
+*.log
+
+#

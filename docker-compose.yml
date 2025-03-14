@@ -1,0 +1,21 @@
+version: '3.8'  # Specify the version of Docker Compose
+
+services:
+  redis:
+    image: redis:latest  # Use the official Redis image
+    container_name: redis_container  # Name of the Redis container
+    ports:
+      - "6379:6379"  # Expose Redis port 6379 to the host machine
+    networks:
+      - redis_network  # Connect to a custom network (optional)
+    volumes:
+      - redis_data:/data  # Persist Redis data in a volume
+    restart: always  # Automatically restart the container if it stops
+
+networks:
+  redis_network:
+    driver: bridge  # Use the default bridge network (optional)
+
+volumes:
+  redis_data:
+    driver: local  # Use a local volume to persist Redis data
