@@ -139,7 +139,8 @@ The application uses Redis to store idempotency keys and ensure that each paymen
 #### Check if Idempotency Key Exists:
 
 Before creating a new payment intent, the system checks if the idempotencyKey already exists in Redis.
-Retrieve Existing Payment Intent:
+
+### Retrieve Existing Payment Intent:
 
 If the key exists, the system retrieves the existing PaymentIntent from Redis and returns the client secret.
 
